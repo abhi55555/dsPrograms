@@ -29,7 +29,7 @@ class MinHeep:
         elif len(self.heap) == 2:
             max = self.heap.pop()
         else:
-            max = False
+            max = 'No more elements left'
         return max
 
     def __swap(self, i, j):
@@ -59,6 +59,7 @@ class MinHeep:
 m = MinHeep([95, 3, 21])
 m.push(10)
 print(str(m.heap[1:len(m.heap)]))
+m.peek()
 print(str(m.pop()))
 print(str(m.heap[1:len(m.heap)]))
 print(str(m.pop()))
@@ -68,4 +69,3 @@ print(str(m.heap[1:len(m.heap)]))
 print(str(m.pop()))
 print(str(m.heap[1:len(m.heap)]))
 print(str(m.pop()))
-print(str(m.heap[1:len(m.heap)]))
