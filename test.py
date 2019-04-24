@@ -26,18 +26,20 @@
 #     n.append
 #     (ss)
 # print(n)
-import math
 
 
-def primality(n):
-    if n == 1:
-        return 'Not prime'
-    sq = int(math.sqrt(n)) + 1
-    for i in range(2, sq):
-        if (n % i) == 0:
-            return 'Not prime'
+# def birthdayCakeCandles(ar):
+#     ar.sort()
+#     count = 1
+#     for i in range(len(ar) - 1, 0, -1):
+#         if ar[i] > ar[i - 1]:
+#             continue
+#         else:
+#             count += 1
+#     if ar[0] == ar[1]:
+#         count += 1
+#     return count
 
-    return 'Prime'
 
-
-print(primality(3057601))
+# a = [4, 4, 4, 4]
+# print(birthdayCakeCandles(a))
