@@ -3,7 +3,7 @@
 # private functions: __swap, __floatUp, __bubbleDown
 
 
-class MinHeep:
+class MinHeap:
     def __init__(self, items=[]):
         super().__init__()
         self.heap = [0]
@@ -56,7 +56,7 @@ class MinHeep:
             self.__bubbleDown(smallest)
 
 
-m = MinHeep([95, 3, 21])
+m = MinHeap([95, 3, 21])
 m.push(10)
 print(str(m.heap[1:len(m.heap)]))
 m.peek()

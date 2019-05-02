@@ -14,7 +14,7 @@ class Graph:
         self.V = vertices
         self.graph = [None] * self.V
 
-    def add_edge(self, src, dest):
+    def addEdge(self, src, dest):
 
         node = AdjNode(dest)
         node.next = self.graph[src]
@@ -32,7 +32,6 @@ class Graph:
                 print(" -> {}".format(temp.vertex), end="")
                 temp = temp.next
             print(" \n")
-
 
 
 def dijkstra(G, source):
@@ -56,3 +55,12 @@ def dijkstra(G, source):
             print(f'Updated current = {current.getVertexID} next = {next.getVertexID} newDist = {next.getDistance}')
         else:
             print('No updation')
+
+
+gg = Graph(4)
+gg.addEdge(0, 1)
+gg.addEdge(0, 2)
+gg.addEdge(1, 3)
+gg.addEdge(3, 2)
+
+dijkstra(gg, [0])

@@ -1,7 +1,7 @@
 # find element repeated in array certain number of times
 
 
-def findElement(A):
+def findElement(A, n):
     table = {}
     for a in A:
         if a in table:
@@ -11,11 +11,11 @@ def findElement(A):
         else:
             table[a] += 0
 
-    for t in A:
-        table[t] == '3':
-        print(t)
+    for t in table:
+        if table[t] == n:
+            print(t)
 
 
-A = [4, 2, 2, 3, 22, 3, 3, 14, 5, 17, 9, 26]
+A = [4, 2, 2, 66, 22, 66, 66, 14, 5, 17, 9, 26]
 
-findElement(A)
+findElement(A, 3)

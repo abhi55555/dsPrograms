@@ -8,7 +8,7 @@ class HashTable:
         self.data = [None] * self.size
 
     def put(self, key, data):
-        hashvalue = hashfunction(key, len(self.slots))
+        hashvalue = key % len(self.slots)
         if self.slots[hashvalue] is None:
             self.slots[hashvalue] = key
             self.data[hashvalue] = data

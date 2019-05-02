@@ -30,16 +30,27 @@
 
 # def birthdayCakeCandles(ar):
 #     ar.sort()
+#     if ar[0] == ar[1]:
+#         return len(ar)
 #     count = 1
 #     for i in range(len(ar) - 1, 0, -1):
 #         if ar[i] > ar[i - 1]:
 #             continue
 #         else:
 #             count += 1
-#     if ar[0] == ar[1]:
-#         count += 1
 #     return count
 
 
-# a = [4, 4, 4, 4]
+# a = [2, 3, 4, 4]
 # print(birthdayCakeCandles(a))
+# from collections import defaultdict
+# a = defaultdict(set)
+# print(a)
+# a[1] = '1'
+# print(a)
+# a[2].add('2')   # this creates set
+# print(a)
+# a[2].add('23')
+# print(a)
+# a[1].add('12')  # but this does not
+# print(a)
