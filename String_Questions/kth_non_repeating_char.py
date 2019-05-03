@@ -12,9 +12,7 @@ def k_non_rep_char(st, k):
         if table[t] == 1:
             if count == k:
                 print(t)
-                count += 1
-            else:
-                count += 1
+            count += 1
 
 
 st = 'adokandsvoirnoahbnaosbhnonobns'
