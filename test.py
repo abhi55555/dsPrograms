@@ -54,3 +54,7 @@
 # print(a)
 # a[1].add('12')  # but this does not
 # print(a)
+
+# a = [1, 2, 3, 4, 5, 6, 7]
+# a[2:4] = 'replaced1','replaced2'
+# print(a)
