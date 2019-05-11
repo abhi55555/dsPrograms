@@ -13,9 +13,9 @@ def maxSlidingWindow(A, k):
 
     for i in range(k, len(A)):
         print(str(A[deq[0]]) + ' ', end=' ')
-        while deq and deq[0] <= i - k:
+        while deq and deq[0] <= i - k:           # sliding left part of window
             deq.popleft()
-        while deq and A[deq[-1]] <= A[i]:
+        while deq and A[deq[-1]] <= A[i]:        # if last element is smaller than current element pop it
             deq.pop()
         deq.append(i)
 

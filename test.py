@@ -58,3 +58,32 @@
 # a = [1, 2, 3, 4, 5, 6, 7]
 # a[2:4] = 'replaced1','replaced2'
 # print(a)
+# n = 4
+# new_grid = [[0 for i in range(n - 2)] for j in range(n)]
+# print(new_grid)
+# for i in range(n):
+#     for j in range(n-2):
+#         new_grid[i][j] = 1
+# print(new_grid)
+# new_grid[0][0] = 'first'
+# print(new_grid)
+# new_grid[1][3] = 'element'
+# print(new_grid)
+
+
+def primeFactors(n):
+    i = 2
+    l = 2
+
+    while(i * i <= n):
+        while n % i == 0:
+            l = i
+            n //= i
+        i += 1
+    if n > l:
+        l = n
+    print(l)
+
+
+n = 17
+primeFactors(n)
