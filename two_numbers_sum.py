@@ -1,5 +1,5 @@
 # find two numbers in array whose sum is k
-
+# does not work if we need to return indices of array
 
 def findTwoNumbers(A, k):
     n = len(A)
